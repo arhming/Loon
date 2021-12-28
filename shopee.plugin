@@ -1,5 +1,5 @@
 [Mitm]
-hostname = mall.shopee.tw
+hostname = https://mall.shopee.tw/
 
 [Script]
 cron "58 6 * * *" script-path=https://github.com/Black-Magic-Lab/Surge/raw/master/scripts/shopee_checkin.js, wake-system=1, timeout=30
