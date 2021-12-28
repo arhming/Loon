@@ -1,0 +1,8 @@
+[Mitm]
+hostname = %APPEND% mall.shopee.tw
+
+[Script]
+[Script]
+cron "58 6 * * *" script-path=https://kinta.ma/surge/scripts/shopee_checkin.js, wake-system=1, timeout=30
+cron "0 7 * * *" script-path=https://kinta.ma/surge/scripts/shopee_luckydraw.js, wake-system=1, timeout=30
+shopee_token.js = type=http-request,pattern=^https:\/\/mall\.shopee\.tw\/api\/v2\/referral\/get_sharing_data$,script-path=https://kinta.ma/surge/scripts/shopee_token.js,script-update-interval=-1
