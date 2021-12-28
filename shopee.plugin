@@ -4,4 +4,4 @@ hostname = https://mall.shopee.tw/
 [Script]
 cron "58 6 * * *" script-path=https://github.com/Black-Magic-Lab/Surge/raw/master/scripts/shopee_checkin.js, wake-system=1, timeout=30
 cron "0 7 * * *" script-path=https://github.com/Black-Magic-Lab/Surge/raw/master/scripts/shopee_luckydraw.js, wake-system=1, timeout=30
-http-request ^https:\/\/mall\.shopee\.tw\/api\/v2\/referral\/get_sharing_data$ script-path=https://github.com/Black-Magic-Lab/Surge/raw/master/scripts/shopee_token.js, requires-body=true, binary-body-mode=true, timeout=10, tag=shopee_token.js
+http-request ^https:\/\/mall\.shopee\.tw\/api\/v2\/get_feature_toggle$ script-path=https://github.com/Black-Magic-Lab/Surge/raw/master/scripts/shopee_token.js, requires-body=true, binary-body-mode=true, timeout=10, tag=shopee_token.js
