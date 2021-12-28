@@ -1,5 +1,5 @@
 [Mitm]
-hostname = %APPEND% mall.shopee.tw
+hostname = mall.shopee.tw
 
 [Script]
 cron "58 6 * * *" script-path=https://kinta.ma/surge/scripts/shopee_checkin.js, wake-system=1, timeout=30
